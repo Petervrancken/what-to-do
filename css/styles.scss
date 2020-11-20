@@ -1,0 +1,73 @@
+@use "./base/fonts" as *;
+@use './base/reset';
+@use './base/mixins' as *;
+@use './base/variables' as *;
+@import url("./base/icomoon/style.css");
+
+body {
+  width: 100%;
+  margin: auto;
+}
+
+.todoApp {
+  padding: 25px;
+  background-color: #eef3f6;
+  font-family: Roboto;
+  font-size: 16px;
+  width: 570px;
+  margin: auto;
+  &__form {
+    &__input {
+      padding: 25px;
+      margin-top: 25px;
+      background-color: #65c4ae;
+      height: 66px;
+      width: 500px;
+      font-family: Roboto;
+      font-weight: 500;
+      font-size: 16px;
+      color: white;
+      border-bottom-left-radius: 7px;
+      border-top-left-radius: 7px;
+      border-top-right-radius: 33px;
+      border-bottom-right-radius: 33px;
+      margin-bottom: 40px;
+      border-width: 0px;
+      .placeholder {
+        color: white;
+      }
+      &--error {
+        background-color: red;
+      }
+    }
+  }
+  &__list {
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @extend %button-base;
+      .icon--remove {
+        align-content: center;
+        font-size: 30px;
+        color: gray;
+        border-right: 2px solid #b9f8ec;
+        width: 50px;
+        &:hover {
+          color: red;
+        }
+      }
+      .icon--check {
+        font-size: 30px;
+        color: gray;
+
+        &:hover {
+          color: #19ba99;
+        }
+      }
+      .text {
+        width: 340px;
+      }
+    }
+  }
+}

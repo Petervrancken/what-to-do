@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("./fonts/icon/css/icon.css");
+@import url("./base/icomoon/style.css");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.todoApp__list__item {
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: white;
+  width: 500px;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+}
+
+.todoApp {
+  padding: 25px;
+  background-color: #eef3f6;
+  font-family: Roboto;
+  font-size: 16px;
+  width: 570px;
+  margin: auto;
+}
+.todoApp__form__input {
+  padding: 25px;
+  margin-top: 25px;
+  background-color: #65c4ae;
+  height: 66px;
+  width: 500px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 33px;
+  border-bottom-right-radius: 33px;
+  margin-bottom: 40px;
+  border-width: 0px;
+}
+.todoApp__form__input .placeholder {
+  color: white;
+}
+.todoApp__form__input--error {
+  background-color: red;
+}
+.todoApp__list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.todoApp__list__item .icon--remove {
+  align-content: center;
+  font-size: 30px;
+  color: gray;
+  border-right: 2px solid #b9f8ec;
+  width: 50px;
+}
+.todoApp__list__item .icon--remove:hover {
+  color: red;
+}
+.todoApp__list__item .icon--check {
+  font-size: 30px;
+  color: gray;
+}
+.todoApp__list__item .icon--check:hover {
+  color: #19ba99;
+}
+.todoApp__list__item .text {
+  width: 340px;
+}
+
+/*# sourceMappingURL=styles.css.map */
