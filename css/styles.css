@@ -165,7 +165,7 @@ body {
 .todoApp__form {
   position: relative;
 }
-.todoApp__form__button:before {
+.todoApp__form__button .icon:before {
   position: absolute;
   background-color: green;
   height: 70px;
@@ -189,6 +189,7 @@ body {
   border-bottom-right-radius: 33px;
   margin-bottom: 40px;
   border-width: 0px;
+  outline: none;
 }
 .todoApp__form__input .placeholder {
   color: white;

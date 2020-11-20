@@ -19,13 +19,15 @@ body {
   &__form {
     position: relative;
     &__button {
-      &:before {
-        position: absolute;
-        background-color: green;
-        height: 70px;
-        width: 70px;
-        right: 0px;
-        top: 0px;
+      .icon {
+        &:before {
+          position: absolute;
+          background-color: green;
+          height: 70px;
+          width: 70px;
+          right: 0px;
+          top: 0px;
+        }
       }
     }
     &__input {
@@ -44,6 +46,7 @@ body {
       border-bottom-right-radius: 33px;
       margin-bottom: 40px;
       border-width: 0px;
+      outline: none;
       .placeholder {
         color: white;
       }
