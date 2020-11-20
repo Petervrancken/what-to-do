@@ -171,10 +171,18 @@ body {
   color: black;
   height: 70px;
   width: 70px;
-  right: 0px;
-  top: 0px;
+  right: 20px;
+  top: 23px;
   border-radius: 50%;
   font-size: 10px;
+}
+.todoApp__form__button .icon::after {
+  position: absolute;
+  background-color: green;
+  height: 75px;
+  width: 590px;
+  left: 0;
+  right: 0;
 }
 .todoApp__form__input {
   padding: 25px;
