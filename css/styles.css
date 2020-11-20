@@ -162,6 +162,17 @@ body {
   width: 570px;
   margin: auto;
 }
+.todoApp__form {
+  position: relative;
+}
+.todoApp__form__button:before {
+  position: absolute;
+  background-color: green;
+  height: 70px;
+  width: 70px;
+  right: 0px;
+  top: 0px;
+}
 .todoApp__form__input {
   padding: 25px;
   margin-top: 25px;

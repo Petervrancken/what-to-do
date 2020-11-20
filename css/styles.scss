@@ -17,6 +17,17 @@ body {
   width: 570px;
   margin: auto;
   &__form {
+    position: relative;
+    &__button {
+      &:before {
+        position: absolute;
+        background-color: green;
+        height: 70px;
+        width: 70px;
+        right: 0px;
+        top: 0px;
+      }
+    }
     &__input {
       padding: 25px;
       margin-top: 25px;
