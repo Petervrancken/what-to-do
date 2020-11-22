@@ -25,7 +25,6 @@ body {
     height: 105px;
     padding: 20px;
     border-radius: 12px;
-    margin-bottom: 20px;
     &__button {
       position: absolute;
       font-size: 30px;
@@ -38,7 +37,7 @@ body {
       align-items: center;
       display: flex;
       justify-content: center;
-      color: black;
+      color: $green;
       &:hover {
         @include animation;
         animation: pulse 2s infinite;
@@ -65,17 +64,42 @@ body {
     }
   }
   &__list {
+    padding: 20px;
     &__item {
       display: flex;
       align-items: center;
       justify-content: space-between;
       @extend %button-base;
+      .text {
+        margin-right: auto;
+      }
+      .icon--circled {
+        position: relative;
+      }
+      .icon--circled2 {
+        position: absolute;
+        color: $green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -34px;
+        opacity: 0;
+      }
       .icon--remove {
-        align-content: center;
         font-size: 30px;
+        margin-right: 18px;
         color: gray;
-        border-right: 2px solid #b9f8ec;
-        width: 50px;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          background-color: $green;
+          opacity: 0.3;
+          top: -3px;
+          width: 2px;
+          height: 40px;
+          right: -18px;
+        }
         &:hover {
           color: red;
         }
@@ -83,13 +107,24 @@ body {
       .icon--check {
         font-size: 30px;
         color: gray;
+        margin-left: 18px;
 
         &:hover {
           color: #19ba99;
         }
       }
-      .text {
-        width: 340px;
+      &--checked {
+        background-color: $lightgreen;
+        text-decoration: line-through;
+        text-decoration-color: $green;
+        .icon--check {
+          .icon--circled {
+            opacity: 0;
+          }
+          .icon--circled2 {
+            opacity: 1;
+          }
+        }
       }
     }
   }
