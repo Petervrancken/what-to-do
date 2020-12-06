@@ -1,3 +1,3 @@
 # what-to-do
 
-open-pipe.surge.sh
+https://thefatladysings1.surge.sh

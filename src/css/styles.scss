@@ -2,7 +2,7 @@
 @use './base/reset';
 @use './base/mixins' as *;
 @use './base/variables' as *;
-@import url("./base/icomoon/style.css");
+@import url("../../icomoon/style.css");
 
 body {
   width: 100%;
@@ -49,7 +49,7 @@ body {
       border-radius: 8px;
       border-width: 0;
       outline: none;
-      padding: 25px;
+      padding: 25px 45px 25px 25px;
       background-color: rgba(255, 255, 255, 0.3);
       color: white;
       font-size: 16px;
